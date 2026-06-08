@@ -53,7 +53,6 @@
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   }
 
-  /* Header */
   .app-header { margin-bottom: 1.75rem; }
   .app-tag {
     display: inline-flex; align-items: center; gap: 6px;
@@ -65,7 +64,6 @@
   .app-title { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
   .app-sub { font-size: 14px; color: var(--text-2); line-height: 1.55; }
 
-  /* Progress */
   .progress-wrap { margin-bottom: 1.75rem; }
   .progress-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
   .progress-label { font-size: 12px; color: var(--text-3); }
@@ -73,15 +71,10 @@
   .progress-bar { height: 4px; background: var(--border); border-radius: 99px; overflow: hidden; }
   .progress-fill { height: 100%; background: var(--blue); border-radius: 99px; transition: width 0.4s ease; }
 
-  /* Steps */
   .step { display: none; }
   .step.active { display: block; }
 
-  .step-badge {
-    display: inline-block; font-size: 11px; font-weight: 600;
-    color: var(--text-3); letter-spacing: 0.05em; text-transform: uppercase;
-    margin-bottom: 0.5rem;
-  }
+  .step-badge { display: inline-block; font-size: 11px; font-weight: 600; color: var(--text-3); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; }
   .step-title { font-size: 16px; font-weight: 600; margin-bottom: 0.3rem; }
   .step-desc { font-size: 13px; color: var(--text-2); line-height: 1.55; margin-bottom: 1.25rem; }
 
@@ -92,7 +85,6 @@
     margin-bottom: 1rem; border: 1px solid var(--border);
   }
 
-  /* Process inputs */
   .process-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 1rem; }
   .process-item { display: flex; align-items: center; gap: 8px; }
   .process-item input {
@@ -103,71 +95,61 @@
   }
   .process-item input:focus { border-color: var(--blue); }
   .remove-btn {
-    background: none; border: none; cursor: pointer;
-    color: var(--text-3); padding: 6px; border-radius: 6px;
-    display: flex; align-items: center; font-size: 16px;
-    transition: color 0.15s, background 0.15s;
+    background: none; border: none; cursor: pointer; color: var(--text-3);
+    padding: 6px; border-radius: 6px; display: flex; align-items: center;
+    font-size: 16px; transition: color 0.15s, background 0.15s;
   }
   .remove-btn:hover { color: var(--text); background: var(--bg-2); }
 
   .add-btn {
-    display: flex; align-items: center; gap: 6px;
-    background: none; border: 1.5px dashed var(--border-md);
-    border-radius: var(--radius); padding: 9px 14px;
-    font-size: 13px; color: var(--text-3); cursor: pointer;
+    display: flex; align-items: center; gap: 6px; background: none;
+    border: 1.5px dashed var(--border-md); border-radius: var(--radius);
+    padding: 9px 14px; font-size: 13px; color: var(--text-3); cursor: pointer;
     width: 100%; font-family: inherit; transition: border-color 0.15s, color 0.15s;
   }
   .add-btn:hover { border-color: var(--blue); color: var(--blue); }
 
-  /* Process tabs */
   .proc-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
   .proc-tab {
-    padding: 4px 12px; border-radius: 99px; font-size: 12px;
-    cursor: pointer; border: 1px solid var(--border-md);
-    background: transparent; color: var(--text-2); font-family: inherit;
-    transition: all 0.15s;
+    padding: 4px 12px; border-radius: 99px; font-size: 12px; cursor: pointer;
+    border: 1px solid var(--border-md); background: transparent; color: var(--text-2);
+    font-family: inherit; transition: all 0.15s;
   }
   .proc-tab.active { border-color: var(--blue); background: var(--blue-light); color: var(--blue-dark); font-weight: 500; }
 
-  /* Option cards */
   .options-grid { display: flex; flex-direction: column; gap: 8px; margin-bottom: 1.25rem; }
   .option-card {
     display: flex; align-items: flex-start; gap: 12px;
     border: 1px solid var(--border-md); border-radius: var(--radius-lg);
     padding: 12px 16px; cursor: pointer; text-align: left; width: 100%;
-    background: var(--bg); font-family: inherit;
-    transition: border-color 0.15s, background 0.15s;
+    background: var(--bg); font-family: inherit; transition: border-color 0.15s, background 0.15s;
   }
   .option-card:hover { border-color: var(--blue); }
   .option-card.selected { border-color: var(--blue); background: var(--blue-light); }
   .opt-score {
-    min-width: 28px; height: 28px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px; font-weight: 600;
-    background: var(--bg-2); color: var(--text-3);
-    border: 1px solid var(--border); flex-shrink: 0; margin-top: 1px;
+    min-width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; font-size: 12px; font-weight: 600;
+    background: var(--bg-2); color: var(--text-3); border: 1px solid var(--border);
+    flex-shrink: 0; margin-top: 1px;
   }
   .option-card.selected .opt-score { background: var(--blue); color: #fff; border-color: var(--blue); }
   .opt-label { font-size: 14px; font-weight: 500; color: var(--text); line-height: 1.4; }
   .opt-sub { font-size: 12px; color: var(--text-3); margin-top: 2px; line-height: 1.4; }
 
-  /* Navigation */
   .nav {
     display: flex; justify-content: space-between; align-items: center;
-    margin-top: 1.25rem; padding-top: 1.25rem;
-    border-top: 1px solid var(--border);
+    margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border);
   }
   .q-counter { font-size: 12px; color: var(--text-3); }
   .btn-back {
-    padding: 9px 20px; border-radius: var(--radius); font-size: 14px;
-    font-family: inherit; cursor: pointer; border: 1px solid var(--border-md);
-    background: transparent; color: var(--text-2); transition: background 0.15s;
+    padding: 9px 20px; border-radius: var(--radius); font-size: 14px; font-family: inherit;
+    cursor: pointer; border: 1px solid var(--border-md); background: transparent;
+    color: var(--text-2); transition: background 0.15s;
   }
   .btn-back:hover { background: var(--bg-2); }
   .btn-next {
-    padding: 9px 24px; border-radius: var(--radius); font-size: 14px;
-    font-family: inherit; cursor: pointer; border: none;
-    background: var(--blue); color: #fff; font-weight: 600;
+    padding: 9px 24px; border-radius: var(--radius); font-size: 14px; font-family: inherit;
+    cursor: pointer; border: none; background: var(--blue); color: #fff; font-weight: 600;
     transition: background 0.15s;
   }
   .btn-next:hover { background: var(--blue-dark); }
@@ -189,9 +171,7 @@
   .score-rank { font-size: 12px; color: var(--text-3); font-weight: 600; min-width: 20px; }
   .score-rank.first { color: var(--blue-dark); }
   .score-name { flex: 1; font-size: 15px; font-weight: 600; color: var(--text); }
-  .score-pill {
-    font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 99px;
-  }
+  .score-pill { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 99px; }
   .pill-high { background: var(--blue-light); color: var(--blue-dark); }
   .pill-mid { background: var(--bg-2); color: var(--text-2); }
   .pill-low { background: var(--red-light); color: var(--red-dark); }
@@ -203,35 +183,63 @@
   .bar-low { background: var(--red); }
 
   .dim-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-  .dim-tag {
-    font-size: 11px; padding: 2px 8px; border-radius: 99px;
-    border: 1px solid var(--border-md); color: var(--text-3);
-  }
+  .dim-tag { font-size: 11px; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--border-md); color: var(--text-3); }
   .dim-tag.weak { border-color: #f09595; color: var(--red-dark); background: var(--red-light); }
   .dim-tag.strong { border-color: #9FE1CB; color: #085041; background: #E1F5EE; }
 
   .recommendation {
     background: var(--bg-2); border-radius: var(--radius-lg);
-    padding: 16px; margin: 1.25rem 0;
-    border-left: 3px solid var(--blue);
+    padding: 16px; margin: 1.25rem 0; border-left: 3px solid var(--blue);
   }
   .rec-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; color: var(--blue-dark); }
   .rec-body { font-size: 13px; color: var(--text-2); line-height: 1.65; }
 
+  /* Share box */
+  .share-box {
+    border: 1px solid var(--border-md); border-radius: var(--radius-lg);
+    padding: 16px; margin-bottom: 1rem; background: var(--bg);
+  }
+  .share-box-title {
+    font-size: 13px; font-weight: 600; margin-bottom: 4px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .share-box-desc { font-size: 12px; color: var(--text-3); margin-bottom: 10px; }
+  .share-url-row { display: flex; gap: 8px; align-items: center; }
+  .share-url {
+    flex: 1; padding: 8px 12px; font-size: 12px; font-family: monospace;
+    border: 1px solid var(--border-md); border-radius: var(--radius);
+    background: var(--bg-2); color: var(--text-2); overflow: hidden;
+    white-space: nowrap; text-overflow: ellipsis; outline: none;
+    cursor: text;
+  }
+  .btn-copy {
+    display: flex; align-items: center; gap: 6px; padding: 8px 14px;
+    border-radius: var(--radius); font-size: 13px; font-family: inherit;
+    cursor: pointer; border: 1px solid var(--border-md); background: transparent;
+    color: var(--text-2); transition: all 0.15s; white-space: nowrap; font-weight: 500;
+  }
+  .btn-copy:hover { background: var(--blue-light); border-color: var(--blue); color: var(--blue-dark); }
+  .btn-copy.copied { background: #E1F5EE; border-color: #9FE1CB; color: #085041; }
+
+  .result-actions { display: flex; gap: 8px; flex-wrap: wrap; }
   .btn-restart {
     display: flex; align-items: center; gap: 6px; justify-content: center;
     padding: 11px 24px; border-radius: var(--radius); font-size: 14px;
     font-family: inherit; cursor: pointer; border: 1px solid var(--border-md);
-    background: transparent; color: var(--text-2); font-weight: 500; width: 100%;
-    margin-top: 0.75rem; transition: background 0.15s;
+    background: transparent; color: var(--text-2); font-weight: 500; flex: 1;
+    transition: background 0.15s;
   }
   .btn-restart:hover { background: var(--bg-2); }
 
-  /* Footer */
-  .app-footer {
-    text-align: center; margin-top: 1.5rem;
-    font-size: 12px; color: var(--text-3);
+  /* Shared result banner */
+  .shared-banner {
+    display: none; background: var(--blue-light); border: 1px solid var(--blue);
+    border-radius: var(--radius-lg); padding: 12px 16px; margin-bottom: 1.5rem;
+    font-size: 13px; color: var(--blue-dark); align-items: center; gap: 8px;
   }
+  .shared-banner.show { display: flex; }
+
+  .app-footer { text-align: center; margin-top: 1.5rem; font-size: 12px; color: var(--text-3); }
   .app-footer a { color: var(--text-3); text-decoration: none; }
 </style>
 </head>
@@ -240,14 +248,12 @@
 <div class="card">
   <div id="app">
 
-    <!-- Header -->
     <div class="app-header">
       <div class="app-tag"><i class="ti ti-brain" aria-hidden="true"></i> Diagnóstico estratégico</div>
       <div class="app-title">Priorizador de POC — Agente de IA</div>
       <div class="app-sub">Avalie seus processos candidatos em 6 dimensões e descubra qual tem maior potencial para um piloto de IA bem-sucedido.</div>
     </div>
 
-    <!-- Progress -->
     <div class="progress-wrap">
       <div class="progress-meta">
         <span class="progress-label" id="progress-label">Etapa 1 de 7</span>
@@ -256,10 +262,8 @@
       <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
     </div>
 
-    <!-- Main form -->
     <div id="main-form">
 
-      <!-- Step 0 -->
       <div class="step active" id="step-0">
         <div class="step-badge">Etapa 1 de 7</div>
         <div class="step-title">Quais processos você está considerando para a POC?</div>
@@ -281,7 +285,6 @@
         </div>
       </div>
 
-      <!-- Steps 1–6 gerados dinamicamente -->
       <div class="step" id="step-q">
         <div class="step-badge" id="q-badge"></div>
         <div class="step-title" id="q-title"></div>
@@ -300,24 +303,45 @@
 
     <!-- Results -->
     <div class="results" id="results-panel">
+
+      <div class="shared-banner" id="shared-banner">
+        <i class="ti ti-share" style="font-size:16px;flex-shrink:0"></i>
+        <span>Você está visualizando um diagnóstico compartilhado. Clique em "Refazer" para criar o seu próprio.</span>
+      </div>
+
       <div class="result-title">Diagnóstico de priorização</div>
-      <div class="result-sub">Ranking dos processos por potencial de POC de agente de IA</div>
+      <div class="result-sub" id="result-sub">Ranking dos processos por potencial de POC de agente de IA</div>
+
       <div id="score-cards"></div>
       <div class="recommendation" id="recommendation"></div>
-      <button class="btn-restart" onclick="restart()"><i class="ti ti-refresh"></i> Refazer diagnóstico</button>
+
+      <!-- Share box -->
+      <div class="share-box" id="share-box">
+        <div class="share-box-title"><i class="ti ti-link" style="font-size:15px" aria-hidden="true"></i> Link compartilhável</div>
+        <div class="share-box-desc">Copie e envie este link — quem abrir verá exatamente este diagnóstico, sem precisar responder nada.</div>
+        <div class="share-url-row">
+          <input class="share-url" id="share-url" type="text" readonly>
+          <button class="btn-copy" id="btn-copy" onclick="copyLink()">
+            <i class="ti ti-copy" aria-hidden="true"></i> Copiar link
+          </button>
+        </div>
+      </div>
+
+      <div class="result-actions">
+        <button class="btn-restart" onclick="restart()"><i class="ti ti-refresh"></i> Refazer diagnóstico</button>
+      </div>
+
     </div>
 
   </div>
 
-  <div class="app-footer">Desenvolvido com IA · <a href="https://next.com.br" target="_blank">Next</a></div>
+  <div class="app-footer">Desenvolvido com IA · <a href="#" target="_blank">Next</a></div>
 </div>
 
 <script>
 const QUESTIONS = [
   {
-    id: 1,
-    dim: "Volume e Repetitividade",
-    icon: "ti-repeat",
+    id: 1, dim: "Volume e Repetitividade", icon: "ti-repeat",
     title: "Com que frequência esse processo ocorre?",
     desc: "Processos de alto volume são mais fáceis de treinar, testar e demonstrar ROI rapidamente.",
     options: [
@@ -328,9 +352,7 @@ const QUESTIONS = [
     ]
   },
   {
-    id: 2,
-    dim: "Estrutura dos Dados",
-    icon: "ti-database",
+    id: 2, dim: "Estrutura dos Dados", icon: "ti-database",
     title: "As entradas e saídas desse processo são estruturadas?",
     desc: "Dados previsíveis (formulários, planilhas, textos padronizados) facilitam o aprendizado do agente.",
     options: [
@@ -341,9 +363,7 @@ const QUESTIONS = [
     ]
   },
   {
-    id: 3,
-    dim: "Tolerância a Erros",
-    icon: "ti-shield-check",
+    id: 3, dim: "Tolerância a Erros", icon: "ti-shield-check",
     title: "Qual o impacto de um erro do agente nesse processo?",
     desc: "Para uma POC inicial, é essencial que erros sejam detectáveis e corrigíveis sem danos graves.",
     options: [
@@ -354,9 +374,7 @@ const QUESTIONS = [
     ]
   },
   {
-    id: 4,
-    dim: "Dados Históricos",
-    icon: "ti-history",
+    id: 4, dim: "Dados Históricos", icon: "ti-history",
     title: "Existem exemplos históricos desse processo que o agente pode aprender?",
     desc: "Logs, conversas anteriores, planilhas ou registros são o combustível para treinar e avaliar o agente.",
     options: [
@@ -367,9 +385,7 @@ const QUESTIONS = [
     ]
   },
   {
-    id: 5,
-    dim: "Impacto no Negócio",
-    icon: "ti-trending-up",
+    id: 5, dim: "Impacto no Negócio", icon: "ti-trending-up",
     title: "Qual o impacto esperado se esse processo for bem automatizado?",
     desc: "O sucesso de uma POC precisa ser visível e defensável internamente — impacto alto facilita aprovação e expansão.",
     options: [
@@ -380,9 +396,7 @@ const QUESTIONS = [
     ]
   },
   {
-    id: 6,
-    dim: "Patrocínio Interno",
-    icon: "ti-users",
+    id: 6, dim: "Patrocínio Interno", icon: "ti-users",
     title: "Existe um responsável engajado que vai apoiar a POC desse processo?",
     desc: "POCs sem dono claro morrem na gaveta. Um sponsor ativo aumenta muito a chance de sucesso e expansão.",
     options: [
@@ -400,6 +414,37 @@ let processes = [];
 let scores = {};
 let currentQ = 0;
 let currentProc = 0;
+
+// ── URL STATE ──────────────────────────────────────────────
+function encodeState(procs, sc) {
+  const payload = { p: procs, s: sc };
+  return btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
+}
+
+function decodeState(str) {
+  try {
+    return JSON.parse(decodeURIComponent(escape(atob(str))));
+  } catch(e) { return null; }
+}
+
+function buildShareURL(procs, sc) {
+  const base = window.location.href.split('?')[0].split('#')[0];
+  return base + '?d=' + encodeState(procs, sc);
+}
+
+function loadFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const d = params.get('d');
+  if (!d) return false;
+  const state = decodeState(d);
+  if (!state || !state.p || !state.s) return false;
+  processes = state.p;
+  // scores keys may be strings after JSON parse — normalize
+  scores = {};
+  Object.keys(state.s).forEach(k => { scores[parseInt(k)] = state.s[k]; });
+  return true;
+}
+// ──────────────────────────────────────────────────────────
 
 function getProcesses() {
   return Array.from(document.querySelectorAll('#process-list input'))
@@ -448,7 +493,6 @@ function renderQ() {
   document.getElementById('q-icon').className = `ti ${q.icon}`;
   document.getElementById('q-dim').textContent = `Avaliando por processo`;
 
-  // Tabs
   const tabs = document.getElementById('proc-tabs');
   tabs.innerHTML = '';
   if (processes.length > 1) {
@@ -462,7 +506,6 @@ function renderQ() {
     });
   }
 
-  // Options
   const container = document.getElementById('q-options');
   container.innerHTML = '';
   const currentScore = scores[currentProc]?.[currentQ];
@@ -500,7 +543,7 @@ function nextQ() {
     renderQ();
     setProgress(currentQ + 1, 7);
   } else {
-    showResults();
+    showResults(false);
   }
 }
 
@@ -517,7 +560,7 @@ function prevQ() {
   }
 }
 
-function showResults() {
+function showResults(fromURL) {
   const results = processes.map((name, i) => {
     let total = 0, maxTotal = 0;
     const dims = QUESTIONS.map((q, qi) => {
@@ -535,6 +578,10 @@ function showResults() {
   const panel = document.getElementById('results-panel');
   panel.classList.add('show');
   setProgress(7, 7);
+
+  if (fromURL) {
+    document.getElementById('shared-banner').classList.add('show');
+  }
 
   const cardsEl = document.getElementById('score-cards');
   cardsEl.innerHTML = '';
@@ -561,9 +608,7 @@ function showResults() {
   });
 
   setTimeout(() => {
-    document.querySelectorAll('.score-bar').forEach(b => {
-      b.style.width = b.dataset.w + '%';
-    });
+    document.querySelectorAll('.score-bar').forEach(b => { b.style.width = b.dataset.w + '%'; });
   }, 100);
 
   const top = results[0];
@@ -581,6 +626,31 @@ function showResults() {
   }
 
   document.getElementById('recommendation').innerHTML = `<div class="rec-title">Recomendação</div><div class="rec-body">${rec}</div>`;
+
+  // Generate and display share URL
+  const shareURL = buildShareURL(processes, scores);
+  document.getElementById('share-url').value = shareURL;
+
+  // Update browser URL without reload
+  if (!fromURL) {
+    window.history.replaceState({}, '', shareURL);
+  }
+}
+
+function copyLink() {
+  const input = document.getElementById('share-url');
+  const btn = document.getElementById('btn-copy');
+  navigator.clipboard.writeText(input.value).then(() => {
+    btn.classList.add('copied');
+    btn.innerHTML = '<i class="ti ti-check" aria-hidden="true"></i> Copiado!';
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      btn.innerHTML = '<i class="ti ti-copy" aria-hidden="true"></i> Copiar link';
+    }, 2500);
+  }).catch(() => {
+    input.select();
+    document.execCommand('copy');
+  });
 }
 
 function restart() {
@@ -588,11 +658,20 @@ function restart() {
   currentQ = 0;
   currentProc = 0;
   document.getElementById('results-panel').classList.remove('show');
+  document.getElementById('shared-banner').classList.remove('show');
   document.getElementById('main-form').style.display = '';
   document.getElementById('step-q').classList.remove('active');
   document.getElementById('step-0').classList.add('active');
   setProgress(0, 7);
+  window.history.replaceState({}, '', window.location.pathname);
 }
+
+// ── INIT: check for shared URL on load ────────────────────
+(function init() {
+  if (loadFromURL()) {
+    showResults(true);
+  }
+})();
 </script>
 </body>
 </html>
